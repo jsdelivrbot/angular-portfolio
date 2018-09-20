@@ -1,0 +1,185 @@
+.about-container {
+    grid-template-columns: 1fr 1fr;
+
+    .about-section {
+        // display: grid;
+        // grid-template-rows: 150px 150px;
+        
+        .header {
+            font-size: 3em;
+            font-weight: 400;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .about-text {
+            padding-top: 20px;
+
+            a {
+                text-decoration: none;
+            }
+
+            .twitter{
+                color: #1da1f2;
+                border-bottom: 1px solid #1da1f2;
+            }
+
+            .instagram {
+                color: #c32aa3;
+                border-bottom: 1px solid #c32aa3;
+            }
+
+            .github {
+                color: #333;
+                border-bottom: 1px solid #333;
+            }
+
+            .skills-group {
+                .p-header{
+                    font-weight: 500;
+                    margin: 0;
+                }
+
+                .skills {
+                    margin-top: 0;
+
+                    // .angular {
+                    //     color: #b52e31;
+                    // }
+
+                    // .node {
+                    //     color: #6cc24a;
+                    // }
+                    // .html {
+                    //     color: #e34f26;
+                    // }
+                    // .css {
+                    //     color: #4285F4;
+                    // }
+                    // .scss{
+                    //     color: #c69;
+                    // }
+                    // .javascript {
+                    //     color: #f7df1e;
+                    // }
+                }
+            }
+        }
+
+        p {
+            margin: 0;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        .email-text {
+            color: inherit;
+        }
+    }
+    .about-img {
+        height: 500px;
+        margin: 0 auto;
+        border-radius: 5px;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+}
+
+/*
+ *
+ *
+ *
+ *
+    Media Queries below this point
+ *
+ *
+ * 
+ *
+ */ 
+
+@media only screen and (max-width: 1024px) and (min-width: 601px) {
+    .about-container {
+        grid-template-columns: 1fr;
+
+        .about-section {
+            display: grid;
+            grid-template-columns: 1fr;
+
+            .header {
+                font-size: 3em;
+            }
+
+            .about-text {
+                padding-top: 20px;
+            }
+        }
+
+        .about-img {
+            height: 300px;
+            margin: 0 auto;
+            border-radius: 5px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 300px) {
+    .about-container {
+        grid-template-columns: 1fr;
+        background: #f9fafb;
+        border-radius: 5px;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+
+        .about-section {
+            display: grid;
+            grid-template-columns: 1fr;
+            .header {
+                font-size: 1.5em;
+                text-align: center;
+                margin-bottom: 0;
+                letter-spacing: 0.3px;
+            }
+
+            .about-text {
+                padding-top: 10px;
+                font-size: 14px;
+                p {
+                    margin: 10px 10px;
+                    font-size: 13px;
+                }
+
+                .skills-group {
+                    
+
+                    .p-header{
+                        font-weight: 500;
+                        margin: 0;
+                        margin-left: 10px;
+                    }
+
+                    .skills {
+                        margin-top: 0;
+                        font-size: 13px;
+                    }
+                }
+            }
+
+        .contact {
+                p {
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .about-img {
+            height: 220px;
+            margin: 0 auto;
+            border-radius: 5px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+            margin: {
+                top: 15px;
+                bottom: 15px;
+            }
+        }
+    }
+}

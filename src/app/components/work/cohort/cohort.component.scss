@@ -1,0 +1,19 @@
+.disclaimer {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.back {
+    text-decoration: none;
+    color: #546270;
+    border-bottom: 1px solid #550c0c;
+
+    -webkit-transition: all 150ms cubic-bezier(0.55,0.085,0.68,0.53);
+    -moz-transition: all 150ms cubic-bezier(0.55,0.085,0.68,0.53);
+    -o-transition: all 150ms cubic-bezier(0.55,0.085,0.68,0.53);
+}
+
+.back:hover {
+    color: #550c0c;
+    transition: all 150ms cubic-bezier(0.55,0.085,0.68,0.53);
+}
