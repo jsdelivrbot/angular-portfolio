@@ -39,3 +39,7 @@ testem.log
 Thumbs.db
 
 ./node_modules
+/.firebase
+/dist
+/.firebaserc
+/firebase.json

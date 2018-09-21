@@ -8,17 +8,17 @@ import { FourohfourComponent } from "../../components/fourohfour/fourohfour.comp
 import { WorkModule } from '../work/work.module';
 
 const routes: Routes = [
-  // { 
-  //   path: '', 
-  //   component: HomeComponent 
+  // {
+  //   path: '',
+  //   component: HomeComponent
   // },
-  { path: '', component: AboutComponent},
-  { path: 'projects', loadChildren: () =>  WorkModule},
-  // { 
-  //   path: 'about', 
-  //   component: AboutComponent 
+  { path: "", component: AboutComponent },
+  { path: "projects", loadChildren: "../work/work.module#WorkModule"},
+  // {
+  //   path: 'about',
+  //   component: AboutComponent
   // },
-  {path: '**',component: FourohfourComponent}
+  { path: "**", component: FourohfourComponent }
 ];
 
 @NgModule({
